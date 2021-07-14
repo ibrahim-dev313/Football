@@ -1,41 +1,27 @@
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 1440px;
 
+  /* Banner */
 
-body{
-
-}
-main{
-    main {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width: 1440px;
-    }
-}
-/* Banner */
-
-    height: 677px;
-    
+  height: 677px;
 }
 
+.banner-img img {
+  width: 556px;
+  height: 456px;
 }
 
-.banner-img img{
-    width: 556px;
-    height: 456px;
+.players {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.players{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.players-area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 31px;
 }
-.players-area{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 31px;
-}
-
-
-.
-
