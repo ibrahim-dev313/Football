@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  background-color: #2d25a0;
+}
+
+.banner-text {
+  color: #ffffff;
+  font-size: 64px;
+  padding: 207px 0 0 156px;
+}
+.banner-img {
+  padding-top: 135px;
+  padding-right: 140px;
+  padding-bottom: 86px;
+  padding-left: 102px;
+}
+
+.players-area {
+  padding-top: 70px;
+}
+.player-box {
+  display: flex;
+  width: 330px;
+  height: 474px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 3px;
+  padding: 2px;
+}
+.player-img img {
+  width: 300px;
+  height: 256px;
+}
+.player-details {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.player-details p {
+  color: #6c6c6c;
+  margin: 0;
+}
+.player-details h3 {
+  font-size: 28px;
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+.players-area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 31px;
+  grid-row-gap: 27px;
+}
