@@ -3,10 +3,12 @@
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
+
 main {
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 100%;
 }
 
 .banner {
@@ -16,8 +18,6 @@ main {
 }
 
 .banner-text {
-  display: flex;
-  flex-direction: column;
   color: #ffffff;
   font-size: 64px;
   padding: 207px 102px 170px 156px;
@@ -38,6 +38,9 @@ main {
   padding-right: 140px;
   padding-bottom: 86px;
   padding-left: 102px;
+}
+.players {
+  margin-bottom: 165px;
 }
 
 .players-area {
@@ -79,4 +82,26 @@ main {
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 31px;
   grid-row-gap: 27px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 63px;
+}
+.footer-img img {
+  width: 483px;
+  height: 110px;
+  margin-bottom: 20px;
+}
+i {
+  font-size: 32px;
+  margin-right: 7px;
+  margin-left: 7px;
+  margin-bottom: 20px;
+}
+.social-links a {
+  text-decoration: none;
+  color: inherit;
 }
