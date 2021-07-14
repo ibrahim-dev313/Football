@@ -1,3 +1,4 @@
+/* ----Common Styles ----*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 * {
   margin: 0;
@@ -11,6 +12,7 @@ main {
   width: 100%;
 }
 
+/* Top Banner Section */
 .banner {
   display: flex;
   align-items: center;
@@ -30,8 +32,13 @@ main {
   color: white;
   border: none;
 }
+.link-button:hover {
+  background-color: white;
+  color: black;
+}
 .link-button a {
   text-decoration: none;
+  color: inherit;
 }
 .banner-img {
   padding-top: 135px;
@@ -39,8 +46,16 @@ main {
   padding-bottom: 86px;
   padding-left: 102px;
 }
+
+/* Player Cards Section  */
+.players-area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 31px;
+  grid-row-gap: 27px;
+}
 .players {
-  margin-bottom: 165px;
+  margin-bottom: 50px;
 }
 
 .players-area {
@@ -49,7 +64,7 @@ main {
 .player-box {
   display: flex;
   width: 330px;
-  height: 474px;
+  height: 460px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -77,13 +92,42 @@ main {
   margin-top: 12px;
   margin-bottom: 10px;
 }
-.players-area {
+
+/* News-Section */
+.news-section {
+  display: flex;
+  flex-direction: column;
+}
+.news-heading {
+  padding: 10px;
+  font-size: 40px;
+  text-align: center;
+}
+.news-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 31px;
-  grid-row-gap: 27px;
+  place-items: center;
+  grid-column-gap: 70px;
+  margin-bottom: 35px;
+}
+.news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 3px;
+}
+.news-detail h3 {
+  margin: 3px;
+  text-align: center;
+}
+.news img {
+  width: 300px;
 }
 
+/* Footer Section  */
 footer {
   display: flex;
   flex-direction: column;
@@ -104,4 +148,15 @@ i {
 .social-links a {
   text-decoration: none;
   color: inherit;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 688px) {
+  html {
+    /* font-size: 45%; */
+  }
+  .players-area {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
