@@ -48,19 +48,17 @@ main {
 }
 
 /* Player Cards Section  */
+.players {
+  margin-bottom: 50px;
+}
 .players-area {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 31px;
   grid-row-gap: 27px;
-}
-.players {
-  margin-bottom: 50px;
-}
-
-.players-area {
   padding-top: 70px;
 }
+
 .player-box {
   display: flex;
   width: 330px;
@@ -72,13 +70,11 @@ main {
   border-radius: 3px;
   margin: 15px;
 }
-.player-info {
-  padding: 0;
-}
 .player-img img {
   width: 300px;
   height: 256px;
 }
+
 .player-details {
   margin-right: 15px;
   margin-left: 15px;
@@ -97,6 +93,7 @@ main {
 .news-section {
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
 }
 .news-heading {
   padding: 10px;
@@ -109,6 +106,10 @@ main {
   place-items: center;
   grid-column-gap: 70px;
   margin-bottom: 35px;
+}
+.news-container a {
+  text-decoration: none;
+  color: inherit;
 }
 .news {
   display: flex;
@@ -149,11 +150,16 @@ i {
   text-decoration: none;
   color: inherit;
 }
+.social-links a:hover {
+  text-decoration: none;
+  color: inherit;
+  color: crimson;
+}
 
 /* Media Queries */
 @media only screen and (max-width: 688px) {
   html {
-    /* font-size: 45%; */
+    font-size: 45%;
   }
   .players-area {
     display: grid;
